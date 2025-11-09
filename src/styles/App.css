@@ -1,12 +1,57 @@
 h1 {
     color: #27aedb;
     text-align: center;
-    }
-    
+}
 
 button{
     color: #27aedb;
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.single-tour {
+    border: 1px solid black;
+    padding: 10px 15px;
+    display: grid;
+    border-radius: 10px;
+}
+
+.tour-footer {
+    margin-top: auto;
+}
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+button {
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 5px;
+    border: none;
+    color: white;
+}
+
+.delete-btn {
+    background-color: red;
+} 
+
+@media screen and (max-width: 900px) {
+    .tour-grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tour-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 480px) {
+    .tour-grid {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
