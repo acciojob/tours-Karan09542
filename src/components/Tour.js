@@ -11,7 +11,7 @@ const Tour = ({ tour, deleteTour }) => {
       </p>
       <p className="tour-price">&#8377;{tour.price}</p>
       <div className="tour-footer">
-        <button onClick={() => setShowMore(!showMore)}>
+        <button id={`see-more-${tour.id}`} onClick={() => setShowMore(!showMore)}>
             {showMore ? "See less" : "Show more"}
         </button>
         <button id={`delete-btn-${tour.id}`} className={`delete-btn`} onClick={() => deleteTour(tour.id)}>
